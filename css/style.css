@@ -5,6 +5,7 @@
     --color-primary: #4d41c0;
     --white: #fff;
     --text-gray: #4A4A4A;
+    --text2-orange: orange;
 }
 
 * {
@@ -40,6 +41,12 @@ nav {
 nav h1 {
     font-size: 24px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+nav h1:hover {
+    color: var(--white);
+    transition: 2s;
 }
 
 nav a {
@@ -59,8 +66,19 @@ a, a:hover {
 
 .dsmovie-contact-container img {
     margin-right: 10px;
+    cursor: pointer;
 }
 
+.dsmovie-contact-container img:hover {
+    background-color: black;
+    border-radius: 75%;
+    transition: 1s;
+}
+
+.dsmovie-contact-container a:hover {
+    color: var(--text2-orange);
+    transition: 1s;
+}
 
 #dsmovie-card-list {
     padding: 40px 0;   
@@ -101,4 +119,9 @@ a, a:hover {
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+}
+
+.dsmovie-btn:hover {
+    background-color: var(--text2-orange);
+    color: var(--color-primary);
 }
