@@ -26,21 +26,39 @@
 
     <main>
         <section id="dsmovie-form-section">
-
             <div class="container dsmovie-form-container">
-
-                <div class="">
+                <div>
                     <div class="dsmovie-card">
                         <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/tkc7AVyUoG9VEeDvukN0TVqa24C.jpg"
                             alt="Cavaleiro da Lua">
-                        <div class="dsmovie-card-description">
+                        <div class="dsmovie-form-description">
                             <h3>Moon Knight</h3>
-                            <a class="dsmovie-btn" href="index.html">Cancel</a>
+                            <form class="dsmovie-form">
+                                <div class="form-group dsmovie-form-group">
+                                    <label for="email">Please provide your email...</label>
+                                    <input class="form-control" type="email" id="email" placeholder="Please provide your email...">
+                                </div><!--form-group-->
+
+                                <div class="form-group dsmovie-form-group">
+                                    <label for="score">Submit your review here...</label>
+                                    <select class="form-control" name="score" id="score">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select><!--form-control-->
+                                </div><!--form-group-->
+
+                                <div class="dsmovie-form-btn-container">
+                                    <button class="dsmovie-btn type="submit">Save</button>
+                                    <a class="dsmovie-btn" href="index.html">Cancel</a>
+                                </div>
+                            </form><!--dsmovie-form-->
                         </div>
                     </div><!--dsmovie-card-->
                 </div>
-
-            </div><!--row-->
+            </div><!--container dsmovie-form-container-->
         </section>
     </main>
 
