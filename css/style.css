@@ -87,7 +87,7 @@ a, a:hover {
 }
 
 .dsmovie-card {
-    width: 80%;
+    width: 100%;
 }
 
 .dsmovie-card img {
@@ -241,4 +241,22 @@ a, a:hover {
 
 .dsmovie-flip-horizontal {
     transform: rotate(180deg);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: var(--star-yellow);
+    color: var(--color-primary);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.dsmovie-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
 }
